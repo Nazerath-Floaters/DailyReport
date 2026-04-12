@@ -3,92 +3,50 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nazerath Daily Brief</title>
+  <title>Nazerath Daily Reports</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="page-shell">
+    <nav class="top-nav">
+      <a href="index.html" class="brand">Nazerath Daily Reports</a>
+      <div class="nav-links">
+        <a href="reports/2026-04-12.html">Latest Issue</a>
+      </div>
+    </nav>
+
     <header class="hero">
       <div class="hero-copy">
-        <p class="eyebrow">Nazerath Daily Brief</p>
-        <h1>Good Morning Micah</h1>
-        <p class="hero-text">A sharper morning briefing with ranked opportunities, visual section cards, and cleaner decision support.</p>
+        <p class="eyebrow">Web Archive</p>
+        <h1>Daily briefing site prototype</h1>
+        <p class="hero-text">A visual report system for Micah, built as a browsable archive with card-based topic sections, ranked highlights, and room for richer styling than markdown alone.</p>
       </div>
       <div class="hero-meta">
         <div class="meta-card">
-          <span class="meta-label">Date</span>
-          <span class="meta-value">2026-04-12</span>
+          <span class="meta-label">Current status</span>
+          <span class="meta-value">Live on GitHub Pages</span>
         </div>
         <div class="meta-card">
-          <span class="meta-label">Mode</span>
-          <span class="meta-value">Prototype</span>
+          <span class="meta-label">Latest issue</span>
+          <span class="meta-value">2026-04-12</span>
         </div>
       </div>
     </header>
 
-    <section class="outline panel">
-      <h2>Outline in Order of Excitement</h2>
-      <ol>
-        <li>The work vault is one dashboard away from becoming an operations cockpit.</li>
-        <li>The daily brief itself can become a real executive interface.</li>
-        <li>Eden Eternal sourcing now has a working official-image pipeline.</li>
-        <li>Qwen 7B is locally installed and ready to become a true fallback once OpenClaw discovery is finished.</li>
-        <li>Your second-brain notes still look like a serious product and portfolio opportunity.</li>
-      </ol>
+    <section class="panel archive-panel">
+      <div class="section-head">
+        <h2>Issue Archive</h2>
+        <p>Each issue should eventually become a visual dashboard of ranked findings, practical opportunities, and linked deep-dive notes.</p>
+      </div>
+      <div class="archive-grid">
+        <a class="archive-card" href="reports/2026-04-12.html">
+          <span class="archive-date">2026-04-12</span>
+          <h3>Daily Brief Prototype</h3>
+          <p>First report issue with topic cards, navigation, and verified official game imagery.</p>
+          <span class="archive-cta">Open issue →</span>
+        </a>
+      </div>
     </section>
-
-    <main class="card-grid">
-      <article class="report-card featured">
-        <img src="assets/icon-EdenEternal.png" alt="Eden Eternal icon" class="card-image">
-        <div class="card-body">
-          <p class="card-kicker">Source Radar</p>
-          <h3>Eden Eternal Server Dream Updates</h3>
-          <p class="signal high">High Signal</p>
-          <p>The official X-Legend site gave up a real, verified image path, which means the report image workflow is now functioning through proper HTML inspection instead of brittle guessing.</p>
-          <div class="card-meta">
-            <span><strong>Why it matters:</strong> We can now build visual sections with real verified assets.</span>
-            <span><strong>Next move:</strong> Expand the same pipeline to Grand Fantasia, Pokémon, and OpenClaw assets.</span>
-          </div>
-        </div>
-      </article>
-
-      <article class="report-card">
-        <div class="card-body">
-          <p class="card-kicker">Operations Leverage</p>
-          <h3>Daily Operations Dashboard</h3>
-          <p class="signal high">High Signal</p>
-          <p>Your GTS notes strongly suggest a reusable dashboard that can unify smartsheet work, rolled-forward tasks, damages, and project snapshots.</p>
-          <div class="card-meta">
-            <span><strong>Closest win:</strong> template first, live data second.</span>
-          </div>
-        </div>
-      </article>
-
-      <article class="report-card">
-        <div class="card-body">
-          <p class="card-kicker">System Upgrade</p>
-          <h3>Local AI Fallback Layer</h3>
-          <p class="signal medium">Medium Signal</p>
-          <p>Qwen 7B is installed and working in Ollama. The remaining step is making OpenClaw discover and use it cleanly as a formal fallback.</p>
-          <div class="card-meta">
-            <span><strong>Status:</strong> local model works, OpenClaw wiring unfinished.</span>
-          </div>
-        </div>
-      </article>
-
-      <article class="report-card wide">
-        <div class="card-body">
-          <p class="card-kicker">Second Brain</p>
-          <h3>Personalized Thinking Infrastructure</h3>
-          <p class="signal high">High Signal</p>
-          <p>The Obsidian notes still point toward a system that helps thought itself, not just storage. That has workflow value now and possible product value later.</p>
-          <div class="card-meta two-col">
-            <span><strong>Time saver:</strong> contextual resurfacing over static archives.</span>
-            <span><strong>Business angle:</strong> highly personalized AI-assisted note systems could become part of a portfolio or service offering.</span>
-          </div>
-        </div>
-      </article>
-    </main>
   </div>
 </body>
 </html>
