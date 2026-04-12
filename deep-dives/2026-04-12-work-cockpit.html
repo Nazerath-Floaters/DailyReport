@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Work Operations Cockpit - 2026-04-12</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <nav class="top-nav glass-bar">
+      <a href="../index.html" class="brand">Nazerath Daily Reports</a>
+      <div class="nav-links">
+        <a href="../reports/2026-04-12.html">Main Briefing</a>
+        <a href="../index.html">Archive</a>
+      </div>
+    </nav>
+
+    <header class="hero-surface issue-hero">
+      <div class="hero-main">
+        <p class="eyebrow">Deep Dive</p>
+        <h1>The GTS notes are ready for a real operations cockpit.</h1>
+        <p class="hero-text">This got promoted because the pattern showed up too consistently to ignore. Micah is already doing the underlying work, but the state of the work still has to be rebuilt too often by hand.</p>
+      </div>
+      <div class="hero-visual-panel">
+        <div class="hero-visual-copy standalone-copy">
+          <span class="detail-label">Why this matters</span>
+          <p>Reduce manual reconstruction, surface blockers faster, and turn notes into command state.</p>
+        </div>
+      </div>
+    </header>
+
+    <section class="panel glass-panel">
+      <h2>What I saw</h2>
+      <ul class="bullet-list">
+        <li>Walhalla-style updates already behave like node command notes.</li>
+        <li>Damages work has clear owner, proof, and follow-up fields hiding in plain sight.</li>
+        <li>Daily notes and templates already carry most of the structure a dashboard would need.</li>
+        <li>Micah's burden is not missing information. It is repeated compression work.</li>
+      </ul>
+    </section>
+
+    <section class="panel glass-panel">
+      <h2>What I did</h2>
+      <p>I converted the pattern into a working spec note in NazerathVault with four core sections: active projects command view, damages queue, rolled-forward tasks, and billing/reporting watchlist.</p>
+    </section>
+
+    <section class="panel glass-panel">
+      <h2>What changed because of that work</h2>
+      <p>The idea now has an implementation path. Instead of vaguely saying a dashboard would help, the system now has named sections, field definitions, and a fastest-possible markdown-first build order.</p>
+    </section>
+
+    <section class="panel glass-panel">
+      <h2>Best next move</h2>
+      <div class="quick-grid">
+        <div>
+          <span class="quick-label">1. Build the shell</span>
+          <p>Create the markdown dashboard note first, without waiting on automation.</p>
+        </div>
+        <div>
+          <span class="quick-label">2. Reuse live data</span>
+          <p>Backfill a few active projects and damages so the structure gets tested against reality.</p>
+        </div>
+        <div>
+          <span class="quick-label">3. Standardize inputs</span>
+          <p>Turn the Walhalla update pattern and damages notes into reusable templates.</p>
+        </div>
+        <div>
+          <span class="quick-label">4. Automate later</span>
+          <p>If the markdown version creates calm on its own, then it is worth wiring further.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
