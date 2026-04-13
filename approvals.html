@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Social Media Approvals</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <nav class="top-nav glass-bar">
+      <a href="index.html" class="brand">Nazerath Daily Reports</a>
+      <div class="nav-links">
+        <a href="index.html">Archive</a>
+        <a href="objectives.html">Objectives</a>
+        <a href="approvals.html">Social Media Approvals</a>
+      </div>
+    </nav>
+
+    <header class="hero-surface issue-hero">
+      <div class="hero-main">
+        <p class="eyebrow">Approval Control Surface</p>
+        <h1>Pending social pushes built from raw media.</h1>
+        <p class="hero-text">This page is the review layer for platform-ready content packets. I can stage titles, clips, thumbnails, captions, dialogue posts, and queue notes here before anything goes live.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#pending-approvals">Review pending pushes</a>
+          <a class="button button-secondary" href="index.html">Back to archive</a>
+        </div>
+      </div>
+      <aside class="hero-side">
+        <div class="metric-card">
+          <span class="metric-label">Current state</span>
+          <strong>Display queue is live</strong>
+        </div>
+        <div class="metric-card">
+          <span class="metric-label">Automation state</span>
+          <strong>Approval buttons are staged, not yet wired</strong>
+        </div>
+      </aside>
+    </header>
+
+    <section class="panel" id="pending-approvals">
+      <p class="eyebrow">Pending approvals</p>
+      <h2>Queue</h2>
+      <p class="panel-note">The approval website surface is ready. The actual button-triggered handoff to posting automation still needs a backend bridge, webhook, or task runner.</p>
+
+      <div class="card-grid">
+        <article class="report-card report-card-featured">
+          <div class="report-card-inner">
+            <div class="issue-topline">
+              <div>
+                <p class="issue-date">Queue item 001 • Pending approval</p>
+                <h3>Social pipeline bootstrap</h3>
+              </div>
+              <span class="status-pill">Pending</span>
+            </div>
+
+            <div class="quick-grid">
+              <div>
+                <span class="quick-label">Targets</span>
+                <p>YouTube, TikTok, Reddit, and X</p>
+              </div>
+              <div>
+                <span class="quick-label">Source media</span>
+                <p>Awaiting first raw media drop</p>
+              </div>
+              <div>
+                <span class="quick-label">Package summary</span>
+                <p>Bootstrap queue item for staged exports, captions, thumbnails, and companion posts.</p>
+              </div>
+              <div>
+                <span class="quick-label">Posting note</span>
+                <p>Needs credential setup and backend approval trigger before true one-click posting exists.</p>
+              </div>
+            </div>
+
+            <div class="deep-dive-row card-actions">
+              <a class="mini-button mini-button-disabled" href="#">Approve and queue posting</a>
+              <a class="mini-button" href="index.html">View main site</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
