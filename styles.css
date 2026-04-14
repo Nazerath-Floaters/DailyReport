@@ -218,6 +218,14 @@ img {
   line-height: 1.78;
 }
 
+.hero-meta-note {
+  margin: 14px 0 0;
+  max-width: 62ch;
+  color: var(--muted-2);
+  font-size: 0.94rem;
+  line-height: 1.6;
+}
+
 .hero-actions {
   display: flex;
   gap: 12px;
@@ -752,7 +760,8 @@ img {
   .hq-grid,
   .activity-cluster,
   .calendar-grid,
-  .activity-language-grid {
+  .activity-language-grid,
+  .freshness-strip {
     grid-template-columns: 1fr;
   }
 
@@ -899,6 +908,41 @@ img {
   margin-top: 18px;
 }
 
+.freshness-strip {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.freshness-card {
+  padding: 18px;
+  border-radius: 20px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.84), rgba(248,250,252,0.68));
+  border: 1px solid rgba(255,255,255,0.82);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.84);
+}
+
+.freshness-card strong {
+  display: block;
+  margin-top: 8px;
+  font-size: 1.02rem;
+}
+
+.freshness-card p {
+  margin: 10px 0 0;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.freshness-card-cyan {
+  background: linear-gradient(180deg, rgba(222, 249, 252, 0.9), rgba(236, 245, 252, 0.74));
+}
+
+.freshness-card-amber {
+  background: linear-gradient(180deg, rgba(255, 244, 220, 0.96), rgba(252, 246, 232, 0.78));
+}
+
 .lane-card {
   display: grid;
   gap: 6px;
@@ -959,6 +1003,40 @@ img {
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 14px;
   margin-top: 18px;
+}
+
+.recent-activity-list {
+  display: grid;
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.recent-activity-item {
+  padding: 18px;
+  border-radius: 20px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.84), rgba(248,250,252,0.7));
+  border: 1px solid rgba(255,255,255,0.82);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.84);
+}
+
+.recent-activity-time {
+  margin: 0;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.recent-activity-item h4 {
+  margin: 10px 0 8px;
+  font-size: 1.05rem;
+}
+
+.recent-activity-item p:last-child {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
 }
 
 .mini-activity-card {
@@ -1117,14 +1195,26 @@ img {
     margin: 24px 0 14px;
   }
 
+  .hq-grid,
+  .activity-cluster,
+  .calendar-grid,
+  .activity-language-grid {
+    grid-template-columns: 1fr;
+  }
+
   .hq-grid {
     gap: 16px;
+  }
+
+  .dashboard-panel-wide {
+    grid-column: auto;
   }
 
   .hero-text,
   .lane-card span,
   .calendar-card p,
-  .mini-activity-card p {
+  .mini-activity-card p,
+  .recent-activity-item p:last-child {
     font-size: 0.96rem;
     line-height: 1.6;
   }
