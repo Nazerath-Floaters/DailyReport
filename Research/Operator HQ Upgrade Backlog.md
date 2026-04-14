@@ -21,8 +21,10 @@ Turn the daily report site into **Nazerath Operator HQ**:
 - [ ] Deepen the business lane block so it can expose the current best offer and buyer path from sellable-offers work.
 - [ ] Deepen the research lane block so it can rotate active tracks like Eden, vault linking, and self-improvement.
 - [ ] Decide whether objectives should stay a separate page or collapse into the homepage.
-- [ ] Add a lightweight, honest recent-activity block driven by generated site data.
+- [x] Add a lightweight, honest recent-activity block driven by generated site data.
 - [ ] Add a site data export path from Mission Dashboard state files into GitHub Pages-safe assets.
+- [ ] Export the homepage's "latest briefing" target and work-freshness labels from source data so those claims stop being hand-pinned.
+- [x] Add a homepage scout-review block so the editor pass can show which local-model hours were actually useful without reopening the raw research notes.
 
 ## Rules
 - Prefer fewer better surfaces.
@@ -40,4 +42,8 @@ Turn the daily report site into **Nazerath Operator HQ**:
 ### 2026-04-14
 - Added an `Operator HQ Map` note so the site direction, source notes, and adjacent lanes have one stable retrieval anchor.
 - Homepage should expose lane cards for work cockpit, business lane, and research lane before adding heavier live data wiring.
-- Best next step after the new cards is one honest recent-activity block sourced from note/state exports instead of static prose.
+- Added a lightweight recent-activity block to the homepage using named, honest site activity items instead of vague static prose.
+- Added a small homepage work-freshness block that plainly shows the latest intake result, source notes for cockpit reconstruction, and the current Smartsheet caution.
+- Best next step after the new recent-activity block is to swap the hand-kept items for a small export from source notes or dashboard state.
+- New anti-drift rule: if the homepage says latest, current, or fresh, that claim should either come from exported data or be labeled manual.
+- Added a homepage scout-review block during the 6 AM daily report pass so the polished front door now shows which local scouts were worth keeping and which weak repetitions did not earn promotion.
