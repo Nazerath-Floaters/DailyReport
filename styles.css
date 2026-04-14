@@ -330,6 +330,9 @@ img {
 }
 
 .status-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   flex-shrink: 0;
   padding: 10px 14px;
   border-radius: 999px;
@@ -1015,17 +1018,23 @@ img {
 }
 
 @media (max-width: 720px) {
+  body.nav-open {
+    overflow: hidden;
+  }
+
   .page-shell {
     max-width: 760px;
     padding: 16px 12px 44px;
   }
 
   .top-nav {
+    position: relative;
+    z-index: 45;
     display: grid;
     grid-template-columns: minmax(0, 1fr) auto;
     align-items: center;
     gap: 12px;
-    border-radius: 28px;
+    border-radius: 24px;
     padding: 12px;
   }
 
@@ -1034,21 +1043,50 @@ img {
   }
 
   .nav-toggle {
+    position: relative;
+    z-index: 46;
     display: inline-flex;
     flex-direction: column;
   }
 
+  .nav-backdrop {
+    position: fixed;
+    inset: 0;
+    border: 0;
+    background: rgba(9, 19, 33, 0.34);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 180ms ease;
+    z-index: 39;
+  }
+
+  body.nav-open .nav-backdrop {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
   .nav-links {
-    display: none;
-    grid-column: 1 / -1;
-    width: 100%;
-    padding-top: 6px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: min(82vw, 320px);
+    margin: 0;
+    padding: 84px 16px 20px;
+    display: flex;
     flex-direction: column;
     align-items: stretch;
+    gap: 10px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.96), rgba(240,246,251,0.94));
+    border-left: 1px solid rgba(27, 47, 77, 0.12);
+    box-shadow: -18px 0 42px rgba(18, 32, 53, 0.18);
+    transform: translateX(108%);
+    transition: transform 220ms ease;
+    z-index: 44;
   }
 
   .top-nav.is-open .nav-links {
-    display: flex;
+    transform: translateX(0);
   }
 
   .nav-links a,
@@ -1057,11 +1095,15 @@ img {
     width: 100%;
   }
 
+  .nav-links a {
+    text-align: left;
+  }
+
   .hero-surface,
   .panel,
   .issue-card-shell,
   .report-card-inner {
-    padding: 20px;
+    padding: 18px;
   }
 
   .hero-main,
@@ -1071,6 +1113,22 @@ img {
     text-align: center;
   }
 
+  .section-band {
+    margin: 24px 0 14px;
+  }
+
+  .hq-grid {
+    gap: 16px;
+  }
+
+  .hero-text,
+  .lane-card span,
+  .calendar-card p,
+  .mini-activity-card p {
+    font-size: 0.96rem;
+    line-height: 1.6;
+  }
+
   .hero-actions {
     flex-direction: column;
     align-items: stretch;
@@ -1078,20 +1136,38 @@ img {
 
   .hero-main h1,
   .issue-topline h3 {
-    font-size: clamp(2rem, 8.4vw, 3.2rem);
+    font-size: clamp(1.75rem, 7.8vw, 2.7rem);
   }
 
   .issue-topline,
   .panel-topline {
-    align-items: center;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .panel-topline .status-pill,
+  .issue-topline .status-pill {
+    width: 100%;
+  }
+
+  .activity-cluster {
+    gap: 10px;
+  }
+
+  .activity-avatar {
+    transform: scale(0.76);
+    transform-origin: center;
+    margin: -22px auto -18px;
+  }
+
+  .calendar-card,
+  .mini-activity-card,
+  .lane-card {
+    padding: 16px;
+    border-radius: 18px;
   }
 
   .media-panel img {
     min-height: 220px;
-  }
-
-  .activity-avatar {
-    width: 150px;
-    height: 150px;
   }
 }
