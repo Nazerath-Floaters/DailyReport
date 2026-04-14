@@ -3,47 +3,191 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nazerath Daily Reports</title>
+  <title>Nazerath Operator HQ</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
   <div class="page-shell">
     <nav class="top-nav glass-bar">
-      <a href="index.html" class="brand">Nazerath Daily Reports</a>
+      <a href="index.html" class="brand">Nazerath Operator HQ</a>
       <div class="nav-links">
-        <a href="reports/2026-04-13.html">Latest Issue</a>
+        <a href="#today">Today</a>
+        <a href="#calendar">Calendar</a>
         <a href="objectives.html">Objectives</a>
-        <a href="approvals.html">Social Media Approvals</a>
+        <a href="approvals.html">Approvals</a>
         <a href="#archive">Archive</a>
       </div>
     </nav>
 
     <header class="hero-surface hero-home">
       <div class="hero-main">
-        <p class="eyebrow">Editorial Briefing Archive</p>
-        <h1>Daily briefings that act like operator packets, not abandoned notes.</h1>
-        <p class="hero-text">The archive is meant to feel like a live publication surface. Each day gets a wide feature card, a fast summary of what changed, and direct paths into the deeper branches that actually moved the work forward.</p>
+        <p class="eyebrow">One Stop Shop Operator Surface</p>
+        <h1>One front door for daily briefs, operator rhythm, and the work that is actually moving.</h1>
+        <p class="hero-text">This site is now the preferred home for the polished layer. The goal is simple: stop splitting the useful view across markdown dashboards, calendar pages, cockpit notes, and half-finished concepts. Keep the archive, add the mission state, pull in the calendar, and let the rest become backend support.</p>
         <div class="hero-actions">
-          <a class="button button-primary" href="reports/2026-04-13.html">Read latest briefing</a>
-          <a class="button button-secondary" href="#archive">Browse archive</a>
+          <a class="button button-primary" href="reports/2026-04-13.html">Open latest briefing</a>
+          <a class="button button-secondary" href="#today">See today’s operator view</a>
         </div>
       </div>
       <aside class="hero-side">
         <div class="metric-card">
-          <span class="metric-label">Current frame</span>
-          <strong>Active operator brief</strong>
+          <span class="metric-label">Primary surface</span>
+          <strong>Operator HQ website</strong>
         </div>
         <div class="metric-card">
-          <span class="metric-label">Archive rule</span>
-          <strong>One wide feature card per day</strong>
+          <span class="metric-label">Working rhythm</span>
+          <strong>30-minute local scouts, 6 AM editorial push</strong>
+        </div>
+        <div class="metric-card">
+          <span class="metric-label">Cleanup rule</span>
+          <strong>One polished front door, many backend notes</strong>
         </div>
       </aside>
     </header>
 
+    <section class="section-band" id="today">
+      <div class="section-head">
+        <h2>Today at a Glance</h2>
+        <p>The site is beginning to absorb the best parts of Mission Control, calendar visibility, and the cockpit direction instead of leaving them spread out across separate surfaces.</p>
+      </div>
+    </section>
+
+    <section class="hq-grid">
+      <article class="panel glass-panel dashboard-panel activity-panel">
+        <div class="panel-topline">
+          <span class="card-kicker">Mission state</span>
+          <span class="status-pill">HQ migration active</span>
+        </div>
+        <div class="activity-cluster">
+          <div class="activity-avatar" aria-hidden="true">
+            <div class="avatar-ring ring-a"></div>
+            <div class="avatar-ring ring-b"></div>
+            <div class="avatar-core">
+              <span class="avatar-eye"></span>
+              <span class="avatar-eye"></span>
+              <span class="avatar-mouth"></span>
+            </div>
+          </div>
+          <div class="activity-copy">
+            <h3>The front door is being consolidated here.</h3>
+            <p>Mission Control, the calendar rhythm, daily briefs, and playful activity cues are moving into one clearer place instead of competing for attention across the vault.</p>
+            <div class="status-chip-row">
+              <span class="status-chip status-chip-live">Daily brief archive</span>
+              <span class="status-chip">Calendar on site</span>
+              <span class="status-chip">Activity visuals started</span>
+            </div>
+            <p class="panel-note">Current Eastern Time: <span id="et-clock">Loading…</span></p>
+          </div>
+        </div>
+      </article>
+
+      <article class="panel glass-panel dashboard-panel">
+        <div class="panel-topline">
+          <span class="card-kicker">Operator lanes</span>
+          <span class="status-pill">Pulled from loose ideas</span>
+        </div>
+        <div class="lane-stack">
+          <a class="lane-card" href="reports/2026-04-13.html">
+            <strong>Daily Brief</strong>
+            <span>Read the strong editorial pass and companion pages.</span>
+          </a>
+          <a class="lane-card" href="objectives.html">
+            <strong>Objectives</strong>
+            <span>Track longer-running research and build lanes.</span>
+          </a>
+          <a class="lane-card" href="approvals.html">
+            <strong>Approvals</strong>
+            <span>Keep controlled posting and content packets visible.</span>
+          </a>
+        </div>
+      </article>
+
+      <article class="panel glass-panel dashboard-panel" id="calendar">
+        <div class="panel-topline">
+          <span class="card-kicker">Calendar rhythm</span>
+          <span class="status-pill">Shifted from note-only</span>
+        </div>
+        <h3>The schedule layer is now visible here too.</h3>
+        <div class="calendar-grid">
+          <div class="calendar-card calendar-card-amber">
+            <span class="detail-label">Every 5 min</span>
+            <strong>Inbox pulse</strong>
+            <p>Cheap watcher checks for new intake and only wakes heavier work when needed.</p>
+          </div>
+          <div class="calendar-card">
+            <span class="detail-label">00 past / 3h</span>
+            <strong>Charter Automation</strong>
+            <p>Workday cleanup, cockpit freshness, intake visibility.</p>
+          </div>
+          <div class="calendar-card">
+            <span class="detail-label">30 past / 3h</span>
+            <strong>Mission Control</strong>
+            <p>Communication flow, dashboard state, operator visibility.</p>
+          </div>
+          <div class="calendar-card">
+            <span class="detail-label">1:00 / 3h</span>
+            <strong>Eden Eternal</strong>
+            <p>Safe server-path scouting and setup work.</p>
+          </div>
+          <div class="calendar-card">
+            <span class="detail-label">1:30 / 3h</span>
+            <strong>Sellable Offers</strong>
+            <p>What Micah can sell, to whom, and through which lanes.</p>
+          </div>
+          <div class="calendar-card">
+            <span class="detail-label">2:00 / 3h</span>
+            <strong>Vault Linking</strong>
+            <p>Connect useful notes and tighten retrieval shape.</p>
+          </div>
+          <div class="calendar-card">
+            <span class="detail-label">2:30 / 3h</span>
+            <strong>Self Improvement</strong>
+            <p>Fix repeated friction, mistakes, and system sprawl.</p>
+          </div>
+          <div class="calendar-card calendar-card-cyan">
+            <span class="detail-label">6:00 AM ET</span>
+            <strong>Daily report push</strong>
+            <p>Big-model review of the scouts, strongest findings, and site update.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="panel glass-panel dashboard-panel dashboard-panel-wide">
+        <div class="panel-topline">
+          <span class="card-kicker">Playful activity language</span>
+          <span class="status-pill">Started, not finished</span>
+        </div>
+        <div class="activity-language-grid">
+          <div class="mini-activity-card">
+            <span class="mini-activity-dot dot-cyan"></span>
+            <strong>Checking</strong>
+            <p>Inbox pulse, source scan, state refresh.</p>
+          </div>
+          <div class="mini-activity-card">
+            <span class="mini-activity-dot dot-blue"></span>
+            <strong>Running</strong>
+            <p>Cron lane active, artifacts being produced.</p>
+          </div>
+          <div class="mini-activity-card">
+            <span class="mini-activity-dot dot-amber"></span>
+            <strong>Reviewing</strong>
+            <p>Big-model editorial pass, picking signal over noise.</p>
+          </div>
+          <div class="mini-activity-card">
+            <span class="mini-activity-dot dot-steel"></span>
+            <strong>Waiting</strong>
+            <p>System is quiet, but the rhythm is still in place.</p>
+          </div>
+        </div>
+        <p class="panel-note">These are visual language blocks for Nazerath activity. They should become more data-backed over time, not more fictional.</p>
+      </article>
+    </section>
+
     <section class="section-band" id="archive">
       <div class="section-head">
         <h2>Briefing Archive</h2>
-        <p>Each day should surface the strongest signal, the practical next move, and any deep-dive branches worth reopening later.</p>
+        <p>The archive stays because it is still the strongest proof that the system can look polished, useful, and alive.</p>
       </div>
     </section>
 
