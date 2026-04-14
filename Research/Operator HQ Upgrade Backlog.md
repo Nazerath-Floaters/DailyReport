@@ -17,9 +17,9 @@ Turn the daily report site into **Nazerath Operator HQ**:
 - [x] Start moving calendar visibility into the site.
 - [x] Start moving playful activity visuals into the site.
 - [x] Add stronger homepage lane cards for the work cockpit, business lane, and research lane so Operator HQ shows more than archive plus objectives.
-- [ ] Deepen the work cockpit block so it exposes live-ish highlights from the current cockpit shell, not just a navigation card.
-- [ ] Deepen the business lane block so it can expose the current best offer and buyer path from sellable-offers work.
-- [ ] Deepen the research lane block so it can rotate active tracks like Eden, vault linking, and self-improvement.
+- [x] Deepen the work cockpit block so it exposes live-ish highlights from the current cockpit shell, not just a navigation card.
+- [x] Deepen the business lane block so it can expose the current best offer and buyer path from sellable-offers work.
+- [x] Deepen the research lane block so it can rotate active tracks like Eden, vault linking, and self-improvement.
 - [ ] Decide whether objectives should stay a separate page or collapse into the homepage.
 - [x] Add a lightweight, honest recent-activity block driven by generated site data.
 - [ ] Add a site data export path from Mission Dashboard state files into GitHub Pages-safe assets.

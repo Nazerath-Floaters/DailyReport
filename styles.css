@@ -761,7 +761,8 @@ img {
   .activity-cluster,
   .calendar-grid,
   .activity-language-grid,
-  .freshness-strip {
+  .freshness-strip,
+  .focus-lane-grid {
     grid-template-columns: 1fr;
   }
 
@@ -1039,6 +1040,45 @@ img {
   line-height: 1.6;
 }
 
+.focus-lane-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.focus-lane-card {
+  padding: 20px;
+  border-radius: 22px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.84), rgba(244,248,252,0.72));
+  border: 1px solid rgba(255,255,255,0.82);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.84);
+}
+
+.focus-lane-card h4 {
+  margin: 12px 0 10px;
+  font-size: 1.08rem;
+  line-height: 1.35;
+}
+
+.focus-lane-card p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.62;
+}
+
+.focus-lane-list {
+  margin: 14px 0 0;
+  padding-left: 18px;
+  color: var(--muted);
+  display: grid;
+  gap: 8px;
+}
+
+.focus-lane-list li {
+  line-height: 1.55;
+}
+
 .mini-activity-card {
   padding: 18px;
   border-radius: 20px;
@@ -1214,7 +1254,9 @@ img {
   .lane-card span,
   .calendar-card p,
   .mini-activity-card p,
-  .recent-activity-item p:last-child {
+  .recent-activity-item p:last-child,
+  .focus-lane-card p,
+  .focus-lane-list {
     font-size: 0.96rem;
     line-height: 1.6;
   }
